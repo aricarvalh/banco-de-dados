@@ -20,3 +20,10 @@ CREATE TABLE IF NOT EXISTS Compras (
 );
 
 SELECT * FROM Clientes;
+
+SELECT 
+    Clientes.nomeCliente,
+    Compras.NomeLivro
+FROM Compras
+INNER JOIN Clientes
+    ON Compras.ClienteID = Clientes.ID;
